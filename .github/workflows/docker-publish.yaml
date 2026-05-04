@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - lab5-cicd
 
 jobs:
   docker:
@@ -29,4 +29,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/lab05_team15:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/lab05_team15
